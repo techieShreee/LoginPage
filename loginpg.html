@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <title>Login</title>
+</head>
+<body>
+    <section class="h-screen">
+        <div class="h-full">
+          <!-- Left container -->
+          <aside style="float: left; width: 100%;">
+            <div class="container1">
+              <img
+                src="login2.png"
+                class="w-full"
+                alt="Sample image" 
+                style="position: absolute; width: 45%; padding-left: 150px; padding-top: 150px;"/>
+            </aside>
+      
+            <!-- Right container -->
+            <aside style="float: right; width: 50%;">
+                        <div class="card border-0 shadow" style="width: 400px; height: 530px; top: 100px; left: 80px;">
+                            <div class="text-black-50 p-4 ">
+                                <center>
+                                    <p class="h3" style="color: rgb(33, 4, 113); text-shadow: 3px 1px #eae2e2;">Sign in for Uninterrupted Services</p>
+                                    
+                                </center> 
+                            </div>
+                        <div class="card-body" style="padding-bottom: 100px;">
+                            <form action="" style>
+                                <input type="text" name="" id="" class="form-control my-4 py-2"
+                                        placeholder="Username" />
+                                <input type="email" name="" id="email" class="form-control my-4 py-2"
+                                        placeholder="Email" />
+                                <input type="password" name="" id="pass" class="form-control my-4 py-2"
+                                        placeholder="Password" />  
+                                        <button type="submit" class="btn btn-primary" onclick="fn1()" style="width: 100%;">Login</button>
+                                        <aside style="float: left; width: 50%;">
+                                            <label>
+                                                <input type="checkbox" name="remember">
+                                                    Remember me
+                                            </label>
+                                        </aside>
+                                        <aside style="float: right; width: 50%;">
+                                            <p style="padding-left: 50px;"><a href="#">Forgot Password?</a></p>
+                                        </aside>
+                            </form>
+                            <center>
+                                <p style="color: rgba(36, 36, 133, 0.657); padding-top: 50px;">ABC PVT. LTD. | 2023<br>Kolkata, West Bengal, India</p></div>
+                            </center>
+                        </div>
+            </aside>
+        </div>
+      </section>
+      <script>
+        function op() {
+            window.open('file:loginpg.html')
+        }
+        function fn1() {
+            var e1 = 'abc@gmail.com';
+            var e2 = 'xyz@gmail.com';
+            var p1 = '123456';
+            var p2 = '654321';
+            var em = document.getElementById("email").value;
+            var ps = document.getElementById("pass").value;
+            if (e1 == em) {
+                if (p1 == ps) {
+                    alert("Login Successfull!!!");
+                } else {
+                    alert("Something Wrong!!!\nTry again");
+                }
+            } else if (e2 == em) {
+                if (p2 == ps) {
+                    alert("Login Successfull!!!");
+                }
+            } else {
+                alert("Something Wrong!!!\nTry again");
+            }
+        }
+      </script>
+</body>
+</html> 
